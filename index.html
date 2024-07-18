@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Leonardo Tresso Mendes" />
+    <meta name="description" content="Challenge Decodificador de Texto" />
+    <title>Decodificador de Texto</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css-reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container-main">
+        <div class="left-div">
+          <span
+            class="text-area"
+            role="textbox"
+            name="cripto"
+            autofocus
+            id="cripto"
+            contenteditable
+          ></span>
+          <div class="warning">
+            <img
+              src="./img/exclamation-circle-fill.svg"
+              alt="Símbolo de aviso"
+            />
+            <p>Apenas letras minúsculas e sem acento.</p>
+          </div>
+          <div class="buttons">
+            <button class="button btn-cripto" type="button" id="criptoBtn">
+              Criptografar
+            </button>
+            <button class="button btn-decripto" type="button" id="decriptoBtn">
+              Descriptografar
+            </button>
+          </div>
+        </div>
+        <div class="decripto-box">
+          <img
+            id="decripto-img"
+            class="img-visibility"
+            src="./img/Sasuke.png"
+            alt="pessoa procurando algo"
+          />
+          <p id="decripto">Nenhuma mensagem encontrada</p>
+          <p class="decipto-subtext">
+            Digite um texto que você deseja criptografar ou descriptografar.
+          </p>
+          <button class="btn-copy invisible" type="button" id="copyBtn">
+            Copiar
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
